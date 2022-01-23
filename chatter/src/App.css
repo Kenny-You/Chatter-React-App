@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+@media(max-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+.App {
+  height: 100vh;
+  background: #0f0f0f;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  justify-content: space-between;
+}
+
+.header {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  background: #0f0f0f;
+  justify-content: center;
+}
+
+.logo {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-image: url("/public/Logo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.footer {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+  background: #0f0f0f;
+  position: relative;
+}
+
+.text-input {
+  width: 100%;
+  border: 1px solid #fff;
+  height: 3rem;
+  border-radius: 1.5rem;
+  padding: 0 1.75rem;
+  background: #fff;
+  box-shadow: #fff;
+  font-size: 1.25rem;
+}
+
+.send {
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  height: 1.7rem;
+  width: 1.7rem;
+  position: absolute;
+  right: 3.5rem;
+  top: -1rem;
+  cursor: pointer;
+  font-size: 2.25rem;
+}
