@@ -20,6 +20,7 @@
   }
 }
 
+/* Style for main section of the app. */
 .App {
   height: 100vh;
   background: #0f0f0f;
@@ -29,6 +30,7 @@
   justify-content: space-between;
 }
 
+/* Style for header, which includes logo and title. */
 .header {
   height: 4rem;
   width: 100%;
@@ -39,6 +41,7 @@
   justify-content: center;
 }
 
+/* Responsive styling for personal logo. */
 .logo {
   height: 2.5rem;
   width: 2.5rem;
@@ -48,6 +51,7 @@
   background-repeat: no-repeat;
 }
 
+/* Responsive styling for app title. */
 .title {
   color: #fff;
   font-weight: bold;
@@ -55,6 +59,7 @@
   margin-left: 1rem;
 }
 
+/* Responsive styling for container that has the text input at the bottom. */
 .footer {
   height: 4rem;
   width: 100%;
@@ -67,6 +72,7 @@
   position: relative;
 }
 
+/* Responsive styling for the user input text box. */
 .text-input {
   width: 100%;
   border: 1px solid #fff;
@@ -78,6 +84,7 @@
   font-size: 1.25rem;
 }
 
+/* Responsive styling for the send button and location. */
 .send {
   background-color: #fff;
   border-radius: 50%;
