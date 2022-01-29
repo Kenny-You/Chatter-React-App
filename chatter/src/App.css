@@ -32,12 +32,12 @@
 
 /* Style for header, which includes logo and title. */
 .header {
-  height: 4rem;
+  height: 4.5rem;
   width: 100%;
   display: flex;
   align-items: center;
-  padding-top: 1rem;
-  background: #0f0f0f;
+  padding-top: 0.65rem;
+  background: #000;
   justify-content: center;
 }
 
@@ -49,6 +49,17 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  animation: spin 5s infinite linear;
+}
+
+/* Creates timeframes and rotation direction for logo */
+@keyframes spin {
+  from {
+      transform: scale(1) rotate(0deg);
+  }
+  to {
+      transform: scale(1) rotate(360deg);
+  }
 }
 
 /* Responsive styling for app title. */
@@ -57,6 +68,19 @@
   font-weight: bold;
   font-size: 2rem;
   margin-left: 1rem;
+}
+
+/* Message bubble styling */
+.messages {
+  background-color: gray;
+  width: 11.5rem;
+  height: 1.5rem;
+  border-radius: 4.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-left: 2rem;
 }
 
 /* Responsive styling for container that has the text input at the bottom. */
