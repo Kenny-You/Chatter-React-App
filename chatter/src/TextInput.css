@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   padding-right: 2rem;
-  padding-left: 2rem;
+  padding-left: 3rem;
   padding-bottom: 3rem;
   background: #0f0f0f;
   position: relative;
@@ -13,7 +13,7 @@
 
   /* Responsive styling for the user input text box. */
   .text-input {
-    width: 100%;
+    width:calc(100% - 50px);
     border: 1px solid #fff;
     height: 3rem;
     border-radius: 1.5rem;
@@ -28,7 +28,7 @@
     height: 1rem;
     border: none;
     position: absolute;
-    right: 4.5rem;
+    right: 5.5rem;
     top: -0.8rem;
     cursor: pointer;
     font-size: 2rem;
