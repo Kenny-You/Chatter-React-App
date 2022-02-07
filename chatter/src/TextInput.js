@@ -19,7 +19,7 @@ function TextInput(props) {
     <footer className="footer">
       <button onClick={props.showCamera}
         style={{left:10, right:'auto'}}>
-        <FiCamera style={{height:15, width:15}} />
+        <FiCamera style = {{height:15, width:15}} />
       </button>
       <input
         className="text-input"
