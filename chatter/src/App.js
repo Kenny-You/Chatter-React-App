@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import Header from "./Header.js"
 import "./App.css";
 import TextInput from "./TextInput";
@@ -6,6 +5,7 @@ import { useState } from "react";
 import Message from "./Message";
 import Camera from 'react-snap-pic';
 import { use100vh } from "react-div-100vh";
+import NamePicker from "./NamePicker.js";
 
 //{showCamera && <Camera takePicture={takePicture} />} whole screen turns white for some reason
 

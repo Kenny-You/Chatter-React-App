@@ -1,4 +1,5 @@
 import React from "react";
+import NamePicker from "./NamePicker";
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -17,6 +18,7 @@ export default class Header extends React.Component {
       <header className="header" onClick={this.changeTitle}>
         <div className="logo" />
         <span className="title">{this.state.text}</span>
+        <NamePicker/>
       </header>
     );
   }

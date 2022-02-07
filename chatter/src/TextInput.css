@@ -13,12 +13,13 @@
 
   /* Responsive styling for the user input text box. */
   .text-input {
-    width:calc(100% - 50px);
+    width:100%;
     border: 1px solid #fff;
     height: 3rem;
     border-radius: 1.5rem;
     padding: 0 1.75rem;
     font-size: 1.25rem;
+    margin-right: 1rem;
   }
 
   /* Responsive styling for the send button and location. */
@@ -32,4 +33,15 @@
     top: -0.8rem;
     cursor: pointer;
     font-size: 2rem;
+  }
+
+  /* Responsive styling for the camera icon */
+  .camera {
+    background-color: white;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 1.5rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
   }
