@@ -68,7 +68,6 @@
   font-weight: bold;
   font-size: 2rem;
   margin-left: 1rem;
-  cursor: pointer;
 }
 
 /* Message container styling */
@@ -79,8 +78,6 @@
   overflow: auto;
   max-height: calc(100vh - 4rem - 4rem);
   min-height: calc(100vh - 4rem - 4rem);
-  padding: 2rem;
-  margin-left: 3rem;
 }
 
 /* Message bubble styling */
@@ -130,3 +127,43 @@
   cursor: pointer;
   font-size: 2.25rem;
 } */
+
+.message-row {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  flex-direction: row;
+}
+.message {
+  color: white;
+  background: gray;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  margin-left: 2rem;
+  border-radius: 1.5rem;
+  max-width: 20rem;
+  min-height: auto;
+  overflow-wrap: break-word;
+  position: relative;
+}
+.message-user {
+  position: absolute;
+  left: 0;
+  top: -0.8rem;
+  font-size: 0.5rem;
+}
+
+.name-picker {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+.name-picker svg {
+  stroke: white;
+  cursor: pointer;
+}
+.name-picker-name {
+  color: white;
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+}

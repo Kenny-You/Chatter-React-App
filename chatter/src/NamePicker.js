@@ -1,44 +1,40 @@
-import {useState} from 'react';
-import './App.css';
-import { FiEdit2, FiUser} from "react-icons/fi";
-import React from "react";
+import { useState } from "react";
+import { FiEdit } from "react-icons/fi";
 
+// the component declaration
+// by convention, we name it with a capital first letter
 function NamePicker(props) {
-    const [editName, setEditName] = useState(false)
-    const [name, setName] = useState("")
+  // this is the state of the name itself
+  const [name, setName] = useState("");
+  // this is a toggle between showing and hiding the input
+  const [showInput, setShowInput] = useState(false);
+  
+  // you clicked ok!
+  function ok() {
+    props.setUsername(name);
+    setShowInput(false);
+  }
 
-    function save() {
-        props.save(name)
-        setEditName(false)   
-      }
-    
-    function onKeyPress(e) {
-    if (e.key === "Enter") {
-        save()
-    }
-    }
-
-    if (editName) {
-        return <div className = "User">
-          <input 
-            className = "UserInput"
-            value = {name}
-            onChange = {e => setName(e.target.value)}
-            onKeyPress = {onKeyPress}
-          />
-          <button className = "SaveUser" onClick = {save}>Complete</button>
-        </div>
-      } else {
-        return (
-          <div className = "User">
-            <FiUser />
-            <div>{name}</div>
-            <button className = "Edit" onClick = {()=>setEditName(true)}>
-              <FiEdit2 />
-            </button>
-          </div>
-        )
-    }
+  if (showInput) {
+    return (
+      <div className="name-picker">
+        <input
+          className="name-picker-input"
+          onChange={(e) => setName(e.target.value)}
+          value={name}
+        />
+        <button className="name-picker-button" onClick={ok}>
+          OK
+        </button>
+      </div>
+    );
+  }
+  return (
+    <div className="name-picker">
+      <span className="name-picker-name">{name || "Set Username:"}</span>
+      <FiEdit size="24" onClick={() => setShowInput(true)} />
+    </div>
+  );
 }
 
-export default NamePicker
+export default NamePicker;
